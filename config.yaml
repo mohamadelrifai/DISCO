@@ -1,0 +1,22 @@
+#config.yaml
+# Edit paths here; the Snakefile reads everything from this file.
+
+#Reference files
+fasta: "GRCh38.primary_assembly.genome.fa"
+gtf:   "/gencode.v47.primary_assembly.annotation.gtf"
+
+#Restrander
+restrander_bin:    "/restrander"
+#identify your library used 
+restrander_config: "/SMART-Seq_mRNA_LR.json"
+
+# Input / output root directories
+input_dir:  /raw_fastq"
+output_dir: "/Output"
+
+# Threads
+#depends on the machine
+threads_minimap2:  
+threads_sort:      
+threads_isoquant:  
+threads_nanocomp:  
